@@ -155,7 +155,7 @@ namespace CityInfo.API.Controllers
                 Mapper.Map(pointOfInterest, pointOfInterestEntity);
 
                 // pointOfInterestEntity is being tracked by the db context, and now has a modified state.
-                // all we have to do is call save, and the changes will be persisted to the DB.
+                // all we have to do is call save, and the changes will be persisted to the Database.
                 _cityInfoRepository.Save();
 
                 return NoContent();
